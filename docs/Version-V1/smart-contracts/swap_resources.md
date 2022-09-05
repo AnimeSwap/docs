@@ -1,4 +1,4 @@
-# resources
+# Resources
 ```move
 // saved in resouce_account
 struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has key {
