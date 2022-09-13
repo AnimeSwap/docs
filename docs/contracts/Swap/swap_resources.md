@@ -1,6 +1,5 @@
 # Resources
 ```move
-// saved in resouce_account
 struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has key {
     coin_x_reserve: u64,
     coin_y_reserve: u64,
@@ -13,7 +12,6 @@ struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has k
     lp_burn_cap: BurnCapability<LPCoin>,
 }
 
-// saved in resouce_account
 struct AdminData has key, drop {
     signer_cap: SignerCapability,
     fee_to: address,
@@ -29,7 +27,6 @@ struct PairMeta has drop, store, copy {
     lp_coin: TypeInfo,
 }
 
-// saved in resouce_account
 struct PairInfo has key {
     pair_list: vector<PairMeta>,
     pair_created_event: event::EventHandle<PairMeta>,
@@ -38,7 +35,6 @@ struct PairInfo has key {
 
 ## LiquidityPool
 ```move
-// saved in resouce_account
 struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has key {
     coin_x_reserve: u64,
     coin_y_reserve: u64,
@@ -55,7 +51,6 @@ struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has k
 
 ## PairInfo
 ```move
-// saved in resouce_account
 struct PairInfo has key {
     pair_list: vector<PairMeta>,
     pair_created_event: event::EventHandle<PairMeta>,
