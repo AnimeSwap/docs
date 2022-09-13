@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AnimeSwap Docs',
-  tagline: 'Welcome to the AnimeSwap Docs',
+  tagline: '',
   url: 'https://docs.animeswap.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -90,15 +90,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Developers',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
               {
                 label: 'Contracts',
                 to: '/docs/contracts',
+              },
+              {
+                label: 'SDK',
+                to: '/docs/sdk',
+              },
+              {
+                label: '#dev-chat',
+                to: 'https://discord.com/channels/1004623679629557850/1005239215208009788',
               },
             ],
           },
@@ -113,14 +117,22 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/animeswap_org',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+            ],
+          },
+          {
+            title: 'Ecosystem',
+            items: [
+              {
+                label: 'Home',
+                href: 'https://animeswap.org',
+              },
+              {
+                label: 'App',
+                href: 'https://app.animeswap.org',
               },
               {
                 label: 'GitHub',
@@ -129,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AnimeSwap`,
+        copyright: ` `,
       },
       prism: {
         theme: lightCodeTheme,
