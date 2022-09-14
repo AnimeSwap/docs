@@ -34,6 +34,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/AnimeSwap/docs/blob/main'
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +58,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'tutorial/intro',
+            docId: 'tutorial/what_is_animeswap',
             position: 'left',
             label: 'Tutorial',
           },
@@ -146,6 +147,9 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        respectPrefersColorScheme: true,
       },
     }),
 };
