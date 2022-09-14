@@ -14,12 +14,15 @@ public entry fun swap_coins_for_exact_coins_3_pair_entry<CoinType1, CoinType2, C
 ```move
 public entry fun add_liquidity_entry<CoinType1, CoinType2>(account: &signer, amount_x_desired: u64, amount_y_desired: u64, amount_x_min: u64, amount_y_min: u64, deadline: u64)
 ```
-add liquidity for `CoinType1` and `CoinType2`. If pair not exist, tx will auto create pair first
-* if pair not exist, it will create pair and add initial liquidity, that is to say, create coin `LPCoin<CoinType1, CoinType2>`
-* at least `amount_x_min` and `amount_y_min` will be added to liquidity, otherwise tx will fail
+Add liquidity for `CoinType1` and `CoinType2`
+
+**IMPORTANT**: If pair not exist, tx will auto **Create Pair first**
+
+* If pair not exist, it will create pair and add initial liquidity, that is to say, create coin `LPCoin<CoinType1, CoinType2>`
+* At least `amount_x_min` and `amount_y_min` will be added to liquidity, otherwise tx will fail
 * CoinType order not matters, but `CoinType1` should match `amount_x_desired` and `amount_x_min`, and `CoinType2` should match `amount_y_desired` and `amount_y_min`
-* emit `pair_created_event`, `mint_event`, `sync_event`
-* cli example:
+* Emit `pair_created_event`, `mint_event`, `sync_event`
+* CLI example:
 ```
 aptos move run --function-id 0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1::add_liquidity_entry \
 --args u64:10000000000 u64:100000000 u64:1 u64:1 u64:1691479027 \
@@ -30,7 +33,7 @@ aptos move run --function-id 0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee56
 ```move
 public entry fun remove_liquidity_entry<CoinType1, CoinType2>(account: &signer, liquidity: u64, amount_x_min: u64, amount_y_min: u64, deadline: u64)
 ```
-remove liquidity for `CoinType1` and `CoinType2`
+Remove liquidity for `CoinType1` and `CoinType2`
 * require pair exists, otherwise tx will fail
 * burn `liquidity` amount `LPCoin<CoinType1, CoinType2>`
 * at least `amount_x_min` and `amount_y_min` is returned, otherwise tx will fail

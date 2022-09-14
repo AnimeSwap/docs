@@ -29,14 +29,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Swap',
-      link: {type: 'doc', id: 'contracts/Swap/swap_api'},
       items: ['contracts/Swap/swap_api', 'contracts/Swap/swap_resources', 'contracts/Swap/swap_events'],
       collapsed: false,
     },
     {
       type: 'category',
       label: 'Staking',
-      link: {type: 'doc', id: 'contracts/MasterChef/masterchef_api'},
       items: ['contracts/MasterChef/masterchef_api'],
       collapsed: false,
     },
