@@ -1,6 +1,3 @@
----
-sidebar_position: 2
----
 # Overview
 Current docs works for the following devnet 20220909:
 - Devnet branch commit: 8f634bcd2e48c4972868d0053d3532f4f760ae19

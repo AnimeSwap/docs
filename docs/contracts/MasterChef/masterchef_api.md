@@ -1,4 +1,4 @@
-# Entry functions
+# Entry Functions
 ```move
 public entry fun deposit<CoinType>(account: &signer, amount: u64)
 public entry fun withdraw<CoinType>(account: &signer, amount: u64)
