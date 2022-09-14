@@ -19,6 +19,12 @@ add liquidity for `CoinType1` and `CoinType2`. If pair not exist, tx will auto c
 * at least `amount_x_min` and `amount_y_min` will be added to liquidity, otherwise tx will fail
 * CoinType order not matters, but `CoinType1` should match `amount_x_desired` and `amount_x_min`, and `CoinType2` should match `amount_y_desired` and `amount_y_min`
 * emit `pair_created_event`, `mint_event`, `sync_event`
+* cli example:
+```
+aptos move run --function-id 0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1::add_liquidity_entry \
+--args u64:10000000000 u64:100000000 u64:1 u64:1 u64:1691479027 \
+--type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::USDT 0x1::aptos_coin::AptosCoin
+```
 
 ## remove_liquidity_entry
 ```move
@@ -30,6 +36,12 @@ remove liquidity for `CoinType1` and `CoinType2`
 * at least `amount_x_min` and `amount_y_min` is returned, otherwise tx will fail
 * CoinType order not matters, but `CoinType1` should match `amount_x_min`, and `CoinType2` should match `amount_y_min`
 * emit `burn_event`, `sync_event`
+* cli example:
+```
+aptos move run --function-id 0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1::remove_liquidity_entry \
+--args u64:1000 u64:1 u64:1 u64:1691479027 \
+--type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC 0x1::aptos_coin::AptosCoin
+```
 
 ## swap_exact_coins_for_coins_entry
 ```move
@@ -43,6 +55,12 @@ swap `CoinType1` for `CoinTypeX`, where `CoinTypeX` is the last type-arg
 * if `to` address is equal to `account`, tx will auto register `CoinTypeX` for `to` address
 * if `to` address is not equal to `account`, user should register `CoinTypeX` to `to` address manually, otherwise tx will fail
 * emit `swap_event`, `sync_event`
+* cli example:
+```
+aptos move run --function-id 0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1::swap_exact_coins_for_coins_entry \
+--args u64:100 u64:1 address:<0xUser> u64:1691479027 \
+--type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC 0x1::aptos_coin::AptosCoin
+```
 
 ## swap_coins_for_exact_coins_entry
 ```move
@@ -56,3 +74,9 @@ swap `CoinType1` for `CoinTypeX`, where `CoinTypeX` is the last type-arg
 * if `to` address is equal to `account`, tx will auto register `CoinTypeX` for `to` address
 * if `to` address is not equal to `account`, user should register `CoinTypeX` to `to` address manually, otherwise tx will fail
 * emit `swap_event`, `sync_event`
+* cli example:
+```
+aptos move run --function-id 0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1::swap_coins_for_exact_coins_entry \
+--args u64:100 u64:1000000000 address:<0xUser> u64:1691479027 \
+--type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC 0x1::aptos_coin::AptosCoin
+```
