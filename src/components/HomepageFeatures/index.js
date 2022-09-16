@@ -4,7 +4,8 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Smart Contracts',
+    to: '/docs/contracts/',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -14,7 +15,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'SDK',
+    to: '/docs/sdk/',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -24,7 +26,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Blog',
+    to: '/blog',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -35,14 +38,14 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, to, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3><a href={to}>{title}</a></h3>
         <p>{description}</p>
       </div>
     </div>

@@ -1,4 +1,4 @@
-# Entry functions
+# Entry Functions
 ```move
 public entry fun deposit<CoinType>(account: &signer, amount: u64)
 public entry fun withdraw<CoinType>(account: &signer, amount: u64)
@@ -11,11 +11,11 @@ public entry fun emergency_withdraw<CoinType>(account: &signer)
 ```move
 public entry fun deposit<CoinType>(account: &signer, amount: u64)
 ```
-deposit `CoinType` to masterchef, and get pending `ANI` reward
+Deposit `CoinType` to masterchef, and get pending `ANI` reward
 * `CoinType` should already been added to masterchef by admin
 * `amount` can be `0` for getting `ANI` reward only
-* emit `deposit_event`
-* cli example:
+* Emit `deposit_event`
+* CLI example:
 ```
 aptos move run --function-id 0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1::deposit \
 --args u64:1000 \
@@ -26,11 +26,11 @@ aptos move run --function-id 0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d52
 ```move
 public entry fun withdraw<CoinType>(account: &signer, amount: u64)
 ```
-withdraw `CoinType` from masterchef, and get pending `ANI` reward
+Withdraw `CoinType` from masterchef, and get pending `ANI` reward
 * `amount` should be less or equal than the amount deposit before
 * `amount` can be `0` for getting `ANI` reward only
-* emit `withdraw_event`
-* cli example:
+* Emit `withdraw_event`
+* CLI example:
 ```
 aptos move run --function-id 0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1::withdraw \
 --args u64:1000 \
@@ -41,9 +41,9 @@ aptos move run --function-id 0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d52
 ```move
 public entry fun emergency_withdraw<CoinType>(account: &signer)
 ```
-withdraw without caring about rewards. EMERGENCY ONLY.
-* pending `ANI` reward will be lost
-* emit `emergency_withdraw_event`
+Withdraw without caring about rewards. **EMERGENCY ONLY**.
+* Pending `ANI` reward will be lost
+* Emit `emergency_withdraw_event`
 
 ## enter_staking & leave_staking
 ```move
@@ -52,7 +52,7 @@ public entry fun leave_staking(account: &signer, amount: u64)
 ```
 * `enter_staking` is alias as `deposit<ANI>`
 * `leave_staking` is alias as `withdraw<ANI>`
-* cli example:
+* CLI example:
 ```
 aptos move run --function-id 0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1::enter_staking \
 --args u64:100000000
