@@ -14,7 +14,7 @@ Mindset is just like watching anime.
 
 AnimeSwap Labs members like anime, comic and games. We want to spread and share those fanciful cultures with the world.
 
-Swap is concise and is the basis symbol of decentralization.
+Swap is concise and is the basis symbol of decentralized protocol.
 
 Combining the two, we have AnimeSwap.
 
