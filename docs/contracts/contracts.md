@@ -7,14 +7,21 @@ Current docs works for the following **Aptos Devnet 20220916**:
 - waypoint: `0:aacefbef2e097b307993c6c4d6806f4648a436c59c2e6488f13d7d76ef2fdc0c`
 - Chain ID: `31`
 
+:::note
+As Aptos Devnet is still in development, the above information may change in the future.
+:::
+
+
+:::tip
+AnimeSwap has not deployed on Aptos Testnet yet.
+:::
+
 ## Swap module
-The contract is deployed by account [0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2](https://explorer.devnet.aptos.dev/account/0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2) with tx [106623](https://explorer.devnet.aptos.dev/txn/106623)
+* Module name: `0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1`
+* Deploy Account: [0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2](https://explorer.devnet.aptos.dev/account/0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2)
+* Deploy Transaction: [106623](https://explorer.devnet.aptos.dev/txn/106623)
 
-Module name:
-* `0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1`
-
-## Staking (MasterChef) module
-The contract is deployed by account [0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78](https://explorer.devnet.aptos.dev/account/0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78) with tx [115044](https://explorer.devnet.aptos.dev/txn/115044)
-
-Module name:
-* `0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1`
+## MasterChef module
+* Module name: `0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1`
+* Deploy Account: [0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78](https://explorer.devnet.aptos.dev/account/0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78)
+* Deploy Transaction: [115044](https://explorer.devnet.aptos.dev/txn/115044)

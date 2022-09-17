@@ -38,7 +38,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Staking',
+      label: 'MasterChef',
       items: [
         'contracts/MasterChef/masterchef_api'
       ],

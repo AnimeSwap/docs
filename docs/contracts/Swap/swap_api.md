@@ -16,7 +16,9 @@ public entry fun add_liquidity_entry<CoinType1, CoinType2>(account: &signer, amo
 ```
 Add liquidity for `CoinType1` and `CoinType2`
 
-**IMPORTANT**: If pair not exist, tx will auto **Create Pair first**
+:::caution
+If pair not exist, transaction will auto **Create Pair first**
+:::
 
 * If pair not exist, it will create pair and add initial liquidity, that is to say, create coin `LPCoin<CoinType1, CoinType2>`
 * At least `amount_x_min` and `amount_y_min` will be added to liquidity, otherwise tx will fail
