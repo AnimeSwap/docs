@@ -70,7 +70,6 @@ const config = {
           },
           {
             type: 'doc',
-            sidebarId: 'sdk',
             docId: 'sdk/sdk',
             position: 'left',
             label: 'SDK',
