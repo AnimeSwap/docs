@@ -2,64 +2,44 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-const FeatureList = [
-  {
-    title: 'Smart Contracts',
-    to: '/docs/contracts/',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'SDK',
-    to: '/docs/sdk/',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Blog',
-    to: '/blog',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
-function Feature({Svg, title, to, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3><a href={to}>{title}</a></h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+          <div className={clsx('col col--4')}>
+            <div className="text--center">
+              <img src="/img/WB777.png" className={styles.featureIcon}></img>
+            </div>
+            <div className="text--center padding-horiz--md">
+              <h3><a href={'/docs/contracts/'}>{'Smart Contracts'}</a></h3>
+              <p>
+                Learn about the architecture of the AnimeSwap Protocol smart contracts made up of the Core and Periphery libraries.
+              </p>
+            </div>
+          </div>
+          <div className={clsx('col col--4')}>
+            <div className="text--center">
+              <img src="/img/HR231.png" className={styles.featureIcon}></img>
+            </div>
+            <div className="text--center padding-horiz--md">
+              <h3><a href={'/docs/sdk/'}>{'SDK'}</a></h3>
+              <p>
+                The SDK is designed to assist developers when interacting with the protocol in any environment that can execute JavaScript.
+              </p>
+            </div>
+          </div>
+          <div className={clsx('col col--4')}>
+            <div className="text--center">
+              <img src="/img/WB001.png" className={styles.featureIcon}></img>
+            </div>
+            <div className="text--center padding-horiz--md">
+              <h3><a href={'/blog'}>{'Blog'}</a></h3>
+              <p>
+                Read the latest news about the AnimeSwap Protocol and the AnimeSwap community.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

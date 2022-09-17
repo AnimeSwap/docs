@@ -12,9 +12,8 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">AnimeSwap Docs</h1>
+        <h1 className={clsx('hero__title', styles.heroTitle)}>AnimeSwap Docs</h1>
         <br/>
-        <p className="hero__subtitle"></p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

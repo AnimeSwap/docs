@@ -11,6 +11,14 @@
   background-color: transparent;
 }
 
+.heroTitle {
+  color: #000;
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #fff;
+}
+
 .heroImage {
   position: absolute;
   opacity: 0.6;
