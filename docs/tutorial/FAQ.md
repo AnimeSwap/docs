@@ -12,7 +12,11 @@ Mindset is just like watching anime.
 
 ### Q2: Why called **AnimeSwap**?
 
+AnimeSwap Labs members like anime, comic and games. We want to spread and share those fanciful cultures with the world.
 
+Swap is concise and is the basis symbol of decentralization.
+
+Combining the two, we have AnimeSwap.
 
 ### Q3: When will AnimeSwap be official launched?
 
