@@ -12,7 +12,7 @@ export default function HomepageFeatures() {
               <img src="/img/WB777.png" className={styles.featureIcon}></img>
             </div>
             <div className="text--center padding-horiz--md">
-              <h3><a href={'/docs/contracts/'}>{'Smart Contracts'}</a></h3>
+              <h2><a href={'/docs/contracts/'}>{'Smart Contracts'}</a></h2>
               <p>
                 Learn about the architecture of the AnimeSwap Protocol smart contracts made up of the Core and Periphery libraries.
               </p>
@@ -23,7 +23,7 @@ export default function HomepageFeatures() {
               <img src="/img/HR231.png" className={styles.featureIcon}></img>
             </div>
             <div className="text--center padding-horiz--md">
-              <h3><a href={'/docs/sdk/'}>{'SDK'}</a></h3>
+              <h2><a href={'/docs/sdk/'}>{'SDK'}</a></h2>
               <p>
                 The SDK is designed to assist developers when interacting with the protocol in any environment that can execute JavaScript.
               </p>
@@ -34,7 +34,7 @@ export default function HomepageFeatures() {
               <img src="/img/WB001.png" className={styles.featureIcon}></img>
             </div>
             <div className="text--center padding-horiz--md">
-              <h3><a href={'/blog'}>{'Blog'}</a></h3>
+              <h2><a href={'/blog'}>{'Blog'}</a></h2>
               <p>
                 Read the latest news about the AnimeSwap Protocol and the AnimeSwap community.
               </p>
