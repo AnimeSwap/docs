@@ -38,6 +38,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          postsPerPage: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
