@@ -1,4 +1,4 @@
-# SDK
+# Overview
 
 * [Typescript SDK GitHub Repo](https://github.com/AnimeSwap/v1-sdk)
-* Check changes from GitHub repo, this doc is WIP
+* The SDK is in rapid update, check changes from GitHub repo, this doc is WIP

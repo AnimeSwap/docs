@@ -1,11 +1,19 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.featureIcon {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0) 0px 0px 1em;
 }

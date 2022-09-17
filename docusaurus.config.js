@@ -38,6 +38,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          postsPerPage: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -70,7 +71,6 @@ const config = {
           },
           {
             type: 'doc',
-            sidebarId: 'sdk',
             docId: 'sdk/sdk',
             position: 'left',
             label: 'SDK',
@@ -149,7 +149,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        // respectPrefersColorScheme: true,
       },
     }),
 };
