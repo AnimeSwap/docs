@@ -87,6 +87,12 @@ const config = {
             position: 'left'
           },
           {
+            type: 'doc',
+            docId: 'updates/2022',
+            position: 'left',
+            label: 'Updates',
+          },
+          {
             href: 'https://github.com/AnimeSwap/docs',
             label: 'GitHub',
             position: 'right',
