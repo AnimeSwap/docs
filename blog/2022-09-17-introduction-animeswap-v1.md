@@ -22,8 +22,25 @@ AnimeSwap protocol has three basic usages:
 x * y = k
 ```
 
-# Swap Fee
+AnimeSwap not including multiple model in one protocol, only using one model, and the model is the core of the protocol.
+
+Some contracts
+
+Pros
+Cons
 
 # Anyone Can Create Pool
+
+# Swap Fee and DAO
+
+# Flash Swap
+
+# Route
+
+Inline route ABI
+
+Smart route
+
+# GAS Friendly
 
 # Future Upgrade
