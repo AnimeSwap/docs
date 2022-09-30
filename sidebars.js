@@ -32,7 +32,8 @@ const sidebars = {
       items: [
         'contracts/Swap/swap_api',
         'contracts/Swap/swap_resources',
-        'contracts/Swap/swap_events'
+        'contracts/Swap/swap_events',
+        'contracts/Swap/swap_examples',
       ],
       collapsed: false,
     },

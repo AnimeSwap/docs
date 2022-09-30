@@ -1,11 +1,11 @@
 # Overview
-Current docs works for the following **Aptos Devnet 20220921**:
-- Devnet branch commit: `2b16401aa24688f1a6294f9ccde5386b9bf726d9`
-- Docker image tag: `devnet_2b16401aa24688f1a6294f9ccde5386b9bf726d9`
-- Docker image digest: `sha256:91c14fcab725ad893ba9544f439a7ef6836006e8ceb5f1dc910f0dfc4d293f23`
-- genesis.blob `sha256: 2d94a1d3a11979f07de35e20833f0e11ac0fa1069c6dfc8d81625053cb989991`
-- waypoint: `0:84af4624117de43a74ae59f05e90433788484edc063947ed871ca2d8e6ecf8dc`
-- Chain ID: `32`
+Current docs works for the following **Aptos Devnet 20220930**:
+- Devnet branch commit: `afa8e736ab33aadf1053354fafa9c1a7fdd18e6b`
+- Docker image tag: `devnet_afa8e736ab33aadf1053354fafa9c1a7fdd18e6b`
+- Docker image digest: `sha256:b0277cb86e26ec7959f2fdf42f1bde9ec172888b4dc902bdb8e0afce2950c00f`
+- genesis.blob sha256: `09a9f514484e177ac8df48099ec0e4f17562fed67a3e351fd4e29e45d7e55abc`
+- waypoint: `0:03f0fe3d8c2933fa4705169ffd2316bf1ce7813a19478267ac2937e3b6ac0cb3`
+- Chain ID: `33`
 
 :::note
 As Aptos Devnet is still in development and reset weekly, the above information may change in the future.
@@ -18,12 +18,12 @@ AnimeSwap has not deployed on Aptos Testnet yet.
 
 ## Swap module
 Swap module is the core of DEX and AMM, the module is about swap coins, create pool, add and remove liquidity.
-* Module name: `0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::AnimeSwapPoolV1`
-* Deploy Account: [0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2](https://explorer.aptoslabs.com/account/0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2?network=Devnet)
-* Deploy Transaction: [28915](https://explorer.aptoslabs.com/txn/28915?network=Devnet)
+* Module name: `0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1`
+* Deploy Account: [0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c](https://explorer.aptoslabs.com/account/0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c?network=Devnet)
+* Deploy Transaction: [175704](https://explorer.aptoslabs.com/txn/175704?network=Devnet)
 
 ## MasterChef module
 MasterChef module is about staking LP and coins to earn extra rewards.
 * Module name: `0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1`
 * Deploy Account: [0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78](https://explorer.aptoslabs.com/account/0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78?network=Devnet)
-* Deploy Transaction: [52573](https://explorer.aptoslabs.com/txn/52573?network=Devnet)
+* Deploy Transaction: [216350](https://explorer.aptoslabs.com/txn/216350?network=Devnet)
