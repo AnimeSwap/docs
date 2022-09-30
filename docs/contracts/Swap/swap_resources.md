@@ -1,5 +1,6 @@
 # Resources
 ```move
+// LP-realated resource
 struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has key {
     coin_x_reserve: Coin<CoinType1>,
     coin_y_reserve: Coin<CoinType2>,
@@ -13,6 +14,7 @@ struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has k
     locked: bool,
 }
 
+// Global config resource
 struct AdminData has key, drop {
     signer_cap: SignerCapability,
     dao_fee_to: address,
@@ -63,7 +65,7 @@ struct AdminData has key, drop {
     is_pause_flash: bool, // pause flash swap
 }
 ```
-* contains swap config
+* contains global swap config
 
 ## PairInfo
 ```move

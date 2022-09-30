@@ -2,7 +2,7 @@
 Update your `Move.toml` with
 
 ```toml
-[dependencies.Liquidswap]
+[dependencies.AnimeSwap]
 git = 'https://github.com/AnimeSwap/v1-core.git'
 rev = 'v0.3.0'
 subdir = 'Swap'

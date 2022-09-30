@@ -1,11 +1,9 @@
 # Events
 ```move
-// save this resource to resource_account
 struct PairInfo has key {
     pair_list: vector<PairMeta>,
 }
 
-// save this resource to resource_account
 struct Events<phantom CoinType1, phantom CoinType2> has key {
     pair_created_event: event::EventHandle<PairCreatedEvent<CoinType1, CoinType2>>,
     mint_event: event::EventHandle<MintEvent<CoinType1, CoinType2>>,
