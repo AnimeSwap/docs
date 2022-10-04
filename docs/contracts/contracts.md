@@ -8,9 +8,6 @@ All contracts use two accounts, `Deploy Account` and `Resource Account`.
 `Deploy Account` is used for contract ABI, and `Resource Account` is used for keeping resources.
 :::
 
-* [v1-core](https://github.com/AnimeSwap/v1-core) : Swap module source code
-* [v1-staking](https://github.com/AnimeSwap/v1-staking) : MasterChef module source code
-
 ## Devnet
 Current docs works for the following **Aptos Devnet 20220930**:
 - Devnet branch commit: `afa8e736ab33aadf1053354fafa9c1a7fdd18e6b`
