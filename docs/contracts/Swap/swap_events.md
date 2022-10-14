@@ -4,59 +4,57 @@ struct PairInfo has key {
     pair_list: vector<PairMeta>,
 }
 
-struct Events<phantom CoinType1, phantom CoinType2> has key {
-    pair_created_event: event::EventHandle<PairCreatedEvent<CoinType1, CoinType2>>,
-    mint_event: event::EventHandle<MintEvent<CoinType1, CoinType2>>,
-    burn_event: event::EventHandle<BurnEvent<CoinType1, CoinType2>>,
-    swap_event: event::EventHandle<SwapEvent<CoinType1, CoinType2>>,
-    sync_event: event::EventHandle<SyncEvent<CoinType1, CoinType2>>,
-    flash_swap_event: event::EventHandle<FlashSwapEvent<CoinType1, CoinType2>>,
+struct Events<phantom X, phantom Y> has key {
+    pair_created_event: event::EventHandle<PairCreatedEvent<X, Y>>,
+    mint_event: event::EventHandle<MintEvent<X, Y>>,
+    burn_event: event::EventHandle<BurnEvent<X, Y>>,
+    swap_event: event::EventHandle<SwapEvent<X, Y>>,
+    sync_event: event::EventHandle<SyncEvent<X, Y>>,
+    flash_swap_event: event::EventHandle<FlashSwapEvent<X, Y>>,
 }
 
-struct PairCreatedEvent<phantom CoinType1, phantom CoinType2> has drop, store {
-    sender_address: address,
+struct PairCreatedEvent<phantom X, phantom Y> has drop, store {
     meta: PairMeta,
 }
 
-struct MintEvent<phantom CoinType1, phantom CoinType2> has drop, store {
-    sender_address: address,
+struct MintEvent<phantom X, phantom Y> has drop, store {
     amount_x: u64,
     amount_y: u64,
+    liquidity: u64,
 }
 
-struct BurnEvent<phantom CoinType1, phantom CoinType2> has drop, store {
-    sender_address: address,
+struct BurnEvent<phantom X, phantom Y> has drop, store {
     amount_x: u64,
     amount_y: u64,
+    liquidity: u64,
 }
 
-struct SwapEvent<phantom CoinType1, phantom CoinType2> has drop, store {
-    sender_address: address,
+struct SwapEvent<phantom X, phantom Y> has drop, store {
     amount_x_in: u64,
     amount_y_in: u64,
     amount_x_out: u64,
     amount_y_out: u64,
 }
 
-struct SyncEvent<phantom CoinType1, phantom CoinType2> has drop, store {
+struct SyncEvent<phantom X, phantom Y> has drop, store {
     reserve_x: u64,
     reserve_y: u64,
+    last_price_x_cumulative: u128,
+    last_price_y_cumulative: u128,
 }
 
-struct FlashSwapEvent<phantom CoinType1, phantom CoinType2> has drop, store {
-    sender_address: address,
-    loan_coin_1: u64,
-    loan_coin_2: u64,
-    repay_coin_1: u64,
-    repay_coin_2: u64,
+struct FlashSwapEvent<phantom X, phantom Y> has drop, store {
+    loan_coin_x: u64,
+    loan_coin_y: u64,
+    repay_coin_x: u64,
+    repay_coin_y: u64,
 }
 ```
 
 ## pair_created_event
 ```move
-let pair_meta = get_pair_meta<CoinType1, CoinType2>();
+let pair_meta = get_pair_meta<X, Y>();
 event::emit_event(&mut events.pair_created_event, PairCreatedEvent {
-    sender_address: signer::address_of(account),
     meta: pair_meta,
 });
 ```
@@ -64,25 +62,24 @@ event::emit_event(&mut events.pair_created_event, PairCreatedEvent {
 ## mint_event
 ```move
 event::emit_event(&mut events.mint_event, MintEvent {
-    sender_address: signer::address_of(account),
     amount_x,
     amount_y,
+    liquidity,
 });
 ```
 
 ## burn_event
 ```move
 event::emit_event(&mut events.burn_event, BurnEvent {
-    sender_address: signer::address_of(account),
     amount_x,
     amount_y,
+    liquidity,
 });
 ```
 
 ## swap_event
 ```move
 event::emit_event(&mut events.swap_event, SwapEvent {
-    sender_address: signer::address_of(account),
     amount_x_in,
     amount_y_in,
     amount_x_out,
@@ -95,16 +92,17 @@ event::emit_event(&mut events.swap_event, SwapEvent {
 event::emit_event(&mut events.sync_event, SyncEvent {
     reserve_x,
     reserve_y,
+    last_price_x_cumulative,
+    last_price_y_cumulative,
 });
 ```
 
 ## flash_swap_event
 ```move
 event::emit_event(&mut events.flash_swap_event, FlashSwapEvent {
-    sender_address: signer::address_of(account),
-    loan_coin_1,
-    loan_coin_2,
-    repay_coin_1,
-    repay_coin_2,
+    loan_coin_x,
+    loan_coin_y,
+    repay_coin_x,
+    repay_coin_y,
 });
 ```

@@ -1,9 +1,9 @@
 # Resources
 ```move
 // LP-realated resource
-struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has key {
-    coin_x_reserve: Coin<CoinType1>,
-    coin_y_reserve: Coin<CoinType2>,
+struct LiquidityPool<phantom X, phantom Y, phantom LPCoin> has key {
+    coin_x_reserve: Coin<X>,
+    coin_y_reserve: Coin<Y>,
     last_block_timestamp: u64,
     last_price_x_cumulative: u128,
     last_price_y_cumulative: u128,
@@ -38,9 +38,9 @@ struct PairInfo has key {
 
 ## LiquidityPool
 ```move
-struct LiquidityPool<phantom CoinType1, phantom CoinType2, phantom LPCoin> has key {
-    coin_x_reserve: Coin<CoinType1>,
-    coin_y_reserve: Coin<CoinType2>,
+struct LiquidityPool<phantom X, phantom Y, phantom LPCoin> has key {
+    coin_x_reserve: Coin<X>,
+    coin_y_reserve: Coin<Y>,
     last_block_timestamp: u64,
     last_price_x_cumulative: u128,
     last_price_y_cumulative: u128,
