@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Be optimistic and fanciful, and build decentralized infrastructure for the world.
 
-Mindset is just like watching anime.
+Like watching anime.
 
 ### Q2: Why called **AnimeSwap**?
 
@@ -18,11 +18,7 @@ Swap is concise and is the basis symbol of decentralized protocol.
 
 Combining the two, we have AnimeSwap.
 
-### Q3: When will AnimeSwap be official launched?
-
-As soon as the Aptos Mainnet Launch.
-
-### Q4: Is there a native token/coin of AnimeSwap?
+### Q3: Is there a native token/coin of AnimeSwap?
 
 AnimeSwap will have a native coin named `$ANI` for sure, but not yet.
 
@@ -31,21 +27,17 @@ It is used to participate in the benefits of AnimeSwap.
 
 We believe DeFi is the future, and DeFi is a ecosystem about coins. We will have our own coin in the future.
 
-### Q5: How to get $ANI?
+### Q4: How to get $ANI?
 
 It has not a public detail plan, details will be public after AnimeSwap official launch.
 
-### Q6: What is the tokenomic of $ANI ?
+### Q5: What is the tokenomic of $ANI ?
 
 No detail about tokenomic currently.
 It’s too early to plan tokenomic details.
 
-### Q7: How to participate in AnimeSwap?
+### Q6: How to participate in AnimeSwap?
 
-AnimeSwap is live on Aptos Devnet currently, you can participate in AnimeSwap by **Swap**, **Create Pool**, **Add Liquidity** and feedback at Discord or Twitter.
-
-:::info
-Web interface can only swap in current version, and pool operates can be done via code (direct call contracts or SDK). Web interface features **UPDATE SOON**.
-:::
+AnimeSwap is live on Aptos Mainnet, you can participate in AnimeSwap by **Swap**, **Create Pool**, **Add Liquidity** and feedback at Discord or Twitter.
 
 Glad to see you help build the AnimeSwap community.
