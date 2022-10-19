@@ -1,21 +1,21 @@
 # Resources
 ```move
 // LP-realated resource
-struct LiquidityPool<phantom X, phantom Y, phantom LPCoin> has key {
+struct LiquidityPool<phantom X, phantom Y> has key {
     coin_x_reserve: Coin<X>,
     coin_y_reserve: Coin<Y>,
     last_block_timestamp: u64,
     last_price_x_cumulative: u128,
     last_price_y_cumulative: u128,
     k_last: u128,
-    lp_mint_cap: MintCapability<LPCoin>,
-    lp_freeze_cap: FreezeCapability<LPCoin>,
-    lp_burn_cap: BurnCapability<LPCoin>,
+    lp_mint_cap: MintCapability<LPCoin<X, Y>>,
+    lp_freeze_cap: FreezeCapability<LPCoin<X, Y>>,
+    lp_burn_cap: BurnCapability<LPCoin<X, Y>>,
     locked: bool,
 }
 
 // Global config resource
-struct AdminData has key, drop {
+struct AdminData has key {
     signer_cap: SignerCapability,
     dao_fee_to: address,
     admin_address: address,
@@ -38,16 +38,16 @@ struct PairInfo has key {
 
 ## LiquidityPool
 ```move
-struct LiquidityPool<phantom X, phantom Y, phantom LPCoin> has key {
+struct LiquidityPool<phantom X, phantom Y> has key {
     coin_x_reserve: Coin<X>,
     coin_y_reserve: Coin<Y>,
     last_block_timestamp: u64,
     last_price_x_cumulative: u128,
     last_price_y_cumulative: u128,
     k_last: u128,
-    lp_mint_cap: MintCapability<LPCoin>,
-    lp_freeze_cap: FreezeCapability<LPCoin>,
-    lp_burn_cap: BurnCapability<LPCoin>,
+    lp_mint_cap: MintCapability<LPCoin<X, Y>>,
+    lp_freeze_cap: FreezeCapability<LPCoin<X, Y>>,
+    lp_burn_cap: BurnCapability<LPCoin<X, Y>>,
     locked: bool,
 }
 ```
