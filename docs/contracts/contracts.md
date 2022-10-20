@@ -1,7 +1,4 @@
 # Overview
-:::note
-As Aptos Devnet is still in development and reset weekly, the above information may change in the future.
-:::
 
 :::tip
 All contracts use two accounts, `Deploy Account` and `Resource Account`.
@@ -20,6 +17,10 @@ Swap module is the core of DEX and AMM, the module is about swap coins, create p
 We have not deployed yet.
 
 ------
+
+:::note
+As Aptos Devnet is still in development and reset weekly, the follow information may change in the future.
+:::
 
 ## Devnet
 Current docs works for the following **Aptos Devnet 20221014**:
