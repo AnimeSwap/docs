@@ -33,8 +33,7 @@ It has not a public detail plan, details will be public after AnimeSwap official
 
 ### Q5: What is the tokenomic of $ANI ?
 
-No detail about tokenomic currently.
-It’s too early to plan tokenomic details.
+No public detail about tokenomic currently.
 
 ### Q6: How to participate in AnimeSwap?
 

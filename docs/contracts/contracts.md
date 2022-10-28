@@ -18,8 +18,26 @@ We have not deployed yet.
 
 ------
 
+## Testnet
+
+### Swap module
+Swap module is the core of DEX and AMM, the module is about swap coins, create pool, add and remove liquidity.
+* Github repo: [v1-core](https://github.com/AnimeSwap/v1-core)
+* Module name: `0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1f1`
+* Deploy Account: [0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c](https://explorer.aptoslabs.com/account/0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c?network=Testnet)
+* Resource Account: [0x796900ebe1a1a54ff9e932f19c548f5c1af5c6e7d34965857ac2f7b1d1ab2cbf](https://explorer.aptoslabs.com/account/0x796900ebe1a1a54ff9e932f19c548f5c1af5c6e7d34965857ac2f7b1d1ab2cbf?network=Testnet)
+
+### MasterChef module
+MasterChef module is about staking LP and coins to earn extra rewards.
+* Github repo: [v1-staking](https://github.com/AnimeSwap/v1-staking)
+* Module name: `0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1`
+* Deploy Account: [0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78](https://explorer.aptoslabs.com/account/0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78?network=Testnet)
+* Resource Account: [0xe4f52c8632301da5eba4529d7e30068f2ac19e0ccf480439bb3858a9b3ec0c8a](https://explorer.aptoslabs.com/account/0xe4f52c8632301da5eba4529d7e30068f2ac19e0ccf480439bb3858a9b3ec0c8a?network=Testnet)
+
+------
+
 :::note
-As Aptos Devnet is still in development and reset weekly, the follow information may change in the future.
+As Aptos Devnet is reset weekly, the follow information may change in the future.
 :::
 
 ## Devnet
@@ -46,19 +64,3 @@ MasterChef module is about staking LP and coins to earn extra rewards.
 * Resource Account: [0xe4f52c8632301da5eba4529d7e30068f2ac19e0ccf480439bb3858a9b3ec0c8a](https://explorer.aptoslabs.com/account/0xe4f52c8632301da5eba4529d7e30068f2ac19e0ccf480439bb3858a9b3ec0c8a?network=Devnet)
 
 ------
-
-## Testnet
-
-### Swap module
-Swap module is the core of DEX and AMM, the module is about swap coins, create pool, add and remove liquidity.
-* Github repo: [v1-core](https://github.com/AnimeSwap/v1-core)
-* Module name: `0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1f1`
-* Deploy Account: [0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c](https://explorer.aptoslabs.com/account/0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c?network=Testnet)
-* Resource Account: [0x796900ebe1a1a54ff9e932f19c548f5c1af5c6e7d34965857ac2f7b1d1ab2cbf](https://explorer.aptoslabs.com/account/0x796900ebe1a1a54ff9e932f19c548f5c1af5c6e7d34965857ac2f7b1d1ab2cbf?network=Testnet)
-
-### MasterChef module
-MasterChef module is about staking LP and coins to earn extra rewards.
-* Github repo: [v1-staking](https://github.com/AnimeSwap/v1-staking)
-* Module name: `0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78::AnimeMasterChefV1`
-* Deploy Account: [0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78](https://explorer.aptoslabs.com/account/0x3e8c3184eef4aba3a91e2d99a08c47354320bc0b4d3ce7d5216d58ecacc0ef78?network=Testnet)
-* Resource Account: [0xe4f52c8632301da5eba4529d7e30068f2ac19e0ccf480439bb3858a9b3ec0c8a](https://explorer.aptoslabs.com/account/0xe4f52c8632301da5eba4529d7e30068f2ac19e0ccf480439bb3858a9b3ec0c8a?network=Testnet)
