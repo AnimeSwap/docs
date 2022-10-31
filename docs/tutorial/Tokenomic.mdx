@@ -1,0 +1,112 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## What Is ANI
+
+`ANI` is AnimeSwap native token. It represents the owner's rights, interests and benefits in the AnimeSwap protocol.
+
+Currently, AnimeSwap is only deployed on [Aptos](https://aptoslabs.com/), and `ANI` is only circulates on Aptos mainnet.
+If AnimeSwap and `ANI` deployed on other chains in the future, this documents will be updated.
+
+## Distribution and Inflation
+
+curve picture
+team token not join staking
+
+<Tabs
+  defaultValue="withoutDAO"
+  values={[
+    {label: 'without DAO reserve', value: 'withoutDAO'},
+    {label: 'with DAO reserve', value: 'withDAO'},
+  ]}>
+  <TabItem value="withoutDAO">
+    AAA
+  </TabItem>
+  <TabItem value="withDAO">
+    BBB
+  </TabItem>
+</Tabs>
+
+### Airdrop of Liquidity Providers (xx%)
+
+* [Snapshot Open Source Code](https://github.com/AnimeSwap/airdrop)
+* [Airdrop Liquidity Providers addresses](https://github.com/AnimeSwap/airdrop/blob/main/LP_snapshot_address.txt)
+
+Airdrop of liquidity providers is a snapshot of the contribution by the AnimeSwap community members on Aptos mainnet.
+
+The snapshot calculation is based on the liquidity provider and their **total value locked** (TVL) on Aptos mainnet.
+
+The snapshot time range
+* Start: Aptos Mainnet `version 2484089`, `2022-10-19 03:28:16 UTC`, as soon as AnimeSwap protocol launch on Aptos Mainnet
+* End: Aptos Mainnet `version 14400000`, `2022-10-27 06:02:10 UTC`
+
+Each address contribution is calculated by the following formula:
+
+$$
+Address Contribution = \sum_{t=2484089}^{14400000}AddressTVL\cdot\Delta(t)
+$$
+
+$$
+Total Contribution = \sum_{t=2484089}^{14400000}ProtocolTVL\cdot\Delta(t)
+$$
+
+$$
+Address ANI = \frac{Address Contribution}{Total Contribution}\cdot TotalANI
+$$
+
+The validated pair of snapshot is Top 12 TVL pairs at snapshot end time:
+
+```
+APT/tAPT
+APT/zUSDC
+APT/whWBTC
+APT/zWETH
+APT/whWETH
+APT/whUSDC
+APT/stAPT
+APT/zUSDT
+zUSDC/zUSDT
+USDA/zUSDT
+APT/MOJO
+whUSDC/zUSDC
+```
+
+For non APT pair, `10 USD` equals to `1 APT` weight.
+
+There are more than 5000 addresses in upper formula result, most of them are too small contributions (bots or less than `$0.1` TVL). The snapshot takes `3.5 APT*day` as threshold for minimum contribution.
+
+Finally, the snapshot get [1001 individual addresses]((https://github.com/AnimeSwap/airdrop/blob/main/LP_snapshot_address.txt)) for ANI liquidity providers airdrop.
+
+### Airdrop of Community Early Backer (yy%)
+
+* [Airdrop OG addresses](#)
+
+
+## Usages
+
+### Staking
+
+### Farm
+
+### Vote and Governance
+
+### Swap Fee
+
+### Buy Anime Goods
+
+farm
+staking
+other DeFi usages
+DAO Governance vote 0.1% proposal
+buy anime goods
+
+vote for lower fee or lower inflation
+
+swap fee 0.25%
+0.05% to DAO
+
+
