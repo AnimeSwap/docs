@@ -2,36 +2,38 @@
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 ## What Is ANI
 
-`ANI` is AnimeSwap native token. It represents the owner's rights, interests and benefits in the AnimeSwap protocol.
+`ANI` is AnimeSwap native token. It represents the owner's rights, interests and benefits in the [AnimeSwap protocol](http://animeswap.org/).
 
 Currently, AnimeSwap is only deployed on [Aptos](https://aptoslabs.com/), and `ANI` is only circulates on Aptos mainnet.
 If AnimeSwap and `ANI` deployed on other chains in the future, this documents will be updated.
 
-## Distribution and Inflation
+## Distribution and Emission
 
-curve picture
-team token not join staking
+| Distribution         | Initial ANI            | Emission            | Description   |
+|----------------------|----------------|-----------------|--|
+| Liquidity Providers Airdrop | 9,000,000 | - | No claim for 7 days will be burned |
+| Early Backers Airdrop | 1,000,000 | - | No claim for 7 days will be burned |
+| AnimeSwap Labs | 0 | unlock 500,000 per 90 days [*1] | 4 years for total unlock [*2] |
+| Emission | 0 | ~0.317 per second | 10,000,000 per year |
+| Burn | 0 | - | [*3] |
 
-<Tabs
-  defaultValue="withoutDAO"
-  values={[
-    {label: 'without DAO reserve', value: 'withoutDAO'},
-    {label: 'with DAO reserve', value: 'withDAO'},
-  ]}>
-  <TabItem value="withoutDAO">
-    AAA
-  </TabItem>
-  <TabItem value="withDAO">
-    BBB
-  </TabItem>
-</Tabs>
+:::info
+[*1] AnimeSwap Labs locked token can't join staking or farming
 
-### Airdrop of Liquidity Providers (xx%)
+[*2] Totally 16 rounds of unlock
+
+[*3] There are [#Usages](#usages) and applications to burn $ANI to reduce emission 
+:::
+
+### Emission
+
+The main part of emission is [#staking-and-farm](#staking-and-farm)
+
+TODO
+
+### Airdrop of Liquidity Providers
 
 * [Snapshot Open Source Code](https://github.com/AnimeSwap/airdrop)
 * [Airdrop Liquidity Providers addresses](https://github.com/AnimeSwap/airdrop/blob/main/LP_snapshot_address.txt)
@@ -81,20 +83,20 @@ There are more than 5000 addresses in upper formula result, most of them are too
 
 Finally, the snapshot get [1001 individual addresses]((https://github.com/AnimeSwap/airdrop/blob/main/LP_snapshot_address.txt)) for ANI liquidity providers airdrop.
 
-### Airdrop of Community Early Backer (yy%)
+### Airdrop of Community Early Backers
 
 * [Airdrop OG addresses](#)
 
 
 ## Usages
 
-### Staking
+TODO
 
-### Farm
+### Staking and Farm
 
 ### Vote and Governance
 
-### Swap Fee
+### DAO Treasury
 
 ### Buy Anime Goods
 
