@@ -23,9 +23,9 @@ export default function HomepageFeatures() {
               <img src="/img/HR231.png" className={styles.featureIcon}></img>
             </div>
             <div className="text--center padding-horiz--md">
-              <h2><a href={'/docs/sdk'}>{'SDK'}</a></h2>
+              <h2><a href={'/docs/tutorial/Tokenomic'}>{'Tokenomic'}</a></h2>
               <p>
-                The SDK is designed to assist developers when interacting with the protocol in any environment that can execute JavaScript.
+                All you want to know about ANI token is here: distribution, emission, usages and more.
               </p>
             </div>
           </div>
