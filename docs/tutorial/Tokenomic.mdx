@@ -1,0 +1,157 @@
+---
+sidebar_position: 2
+---
+
+## What Is ANI
+
+![logo](/img/logo.png)
+
+`ANI` is AnimeSwap native token. It represents the owner's rights, interests and benefits in the [AnimeSwap protocol](http://animeswap.org/).
+
+Currently, AnimeSwap is only deployed on [Aptos](https://aptoslabs.com/), and `ANI` is only circulates on Aptos mainnet.
+If AnimeSwap and `ANI` deployed on other chains in the future, this documents will be updated.
+
+## Distribution and Emission
+
+| Distribution         | Initial ANI            | Emission (ANI)           | Description   |
+|----------------------|----------------|-----------------|--|
+| Liquidity Providers Airdrop | 9,216,500 | - | No claim for 30 days will be burned |
+| Early Backers Airdrop | 783,500 | - | No claim for 30 days will be burned |
+| AnimeSwap Labs | 0 | unlock 500,000 per 90 days [*1] | 4 years for total unlock [*2] |
+| Emission | 0 | ~0.317 per second | 10,000,000 ANI per year |
+| Burn | 0 | reduce emission | [*3] |
+
+:::info
+[*1] AnimeSwap Labs locked token can't join staking or farming
+
+[*2] Totally 16 rounds of unlock
+
+[*3] There are [#Usages](#usages) and applications to burn `ANI` to reduce emission 
+:::
+
+:::tip
+`ANI` token and airdrop claim contracts adddress link and code will list here after deployed on mainnet.
+:::
+
+![Supply](/img/supply.png)
+
+### Emission
+
+The main distribution of emission is [#staking-and-farm](#staking-and-farm)
+
+DeFi is fast evolving, and AnimeSwap will keep evolving.
+If there are better direction for ecosystem growth, AnimeSwap will adjust emission distribution and rate via [vote-and-governance](#vote-and-governance).
+
+### Airdrop of Liquidity Providers
+
+* [Snapshot Open Source Code](https://github.com/AnimeSwap/airdrop)
+* [Airdrop Liquidity Providers addresses (total 1001)](https://github.com/AnimeSwap/airdrop/blob/main/LP_snapshot_address.txt)
+
+Airdrop of liquidity providers is a snapshot of the contribution by the AnimeSwap community members on Aptos mainnet.
+
+The snapshot calculation is based on the liquidity provider and their **total value locked** (TVL) on Aptos mainnet.
+
+The snapshot time range
+* Start: Aptos Mainnet `version 2484089`, `2022-10-19 03:28:16 UTC`, as soon as AnimeSwap protocol launch on Aptos Mainnet
+* End: Aptos Mainnet `version 14400000`, `2022-10-27 06:02:10 UTC`
+
+Each address contribution is calculated by the following formula:
+
+$$
+Address Contribution = \sum_{t=2484089}^{14400000}AddressTVL\cdot\Delta(t)
+$$
+
+$$
+Total Contribution = \sum_{t=2484089}^{14400000}ProtocolTVL\cdot\Delta(t)
+$$
+
+$$
+TotalANI = 9,216,500
+$$
+
+$$
+Address ANI = \frac{Address Contribution}{Total Contribution}\cdot TotalANI
+$$
+
+The validated pair of snapshot is Top 12 TVL pairs at snapshot end time:
+
+```
+APT/tAPT
+APT/zUSDC
+APT/whWBTC
+APT/zWETH
+APT/whWETH
+APT/whUSDC
+APT/stAPT
+APT/zUSDT
+zUSDC/zUSDT
+USDA/zUSDT
+APT/MOJO
+whUSDC/zUSDC
+```
+
+For non APT pair, `10 USD` equals to `1 APT` weight.
+
+There are more than 5000 addresses in upper formula result, most of them are too small contributions (bots or less than `$0.1` TVL). The snapshot takes `3.5 APT*day` as threshold for minimum contribution.
+
+Finally, the snapshot get [1001 individual addresses](https://github.com/AnimeSwap/airdrop/blob/main/LP_snapshot_address.txt) for ANI liquidity providers airdrop.
+
+### Airdrop of Community Early Backers
+
+* [Airdrop OG addresses (total 936)](https://github.com/AnimeSwap/airdrop/blob/main/OG_bind_address.txt)
+
+AnimeSwap community early backers (Discord OG roles) totally receive `783,500 ANI` airdrop, early backers are from many different events before Aptos mainnet,
+such as Twitter spread, Discord server boost, and anime picture shares.
+
+All the early backers have to [bind wallet address with Discord authorization](https://twitter.com/animeswap_org/status/1585635543915778048) on DApp before airdrop.
+
+* `500 ANI` per OG role
+* `1000 ANI` per OG2 role
+
+## Usages
+
+### Staking and Farm
+
+`ANI` could be used into staking and farm to earn more `ANI` and other tokens.
+
+Staking and farm are also the main part of emission `ANI`.
+
+More about staking and farm (MasterChef module) see other documents (write in progress).
+
+### Vote and Governance
+
+`ANI` could be used to vote and governance.
+
+AnimeSwap community members could vote and governance on AnimeSwap protocol and ecosystem with `ANI` token.
+
+Anyone with more than `0.1% of ANI supply` can issue a new proposal, such as:
+* Change pair swap fee for better growth
+* How to distribute emission `ANI` for [farm](#staking-and-farm)
+* How to allocate [DAO treasury](#dao-treasury)
+* Developing new features
+* Deploy on other chains
+* ...
+
+AnimeSwap Labs responsible for implementation proposals
+
+Proposals and voting system is in progress.
+
+### DAO Treasury
+
+AnimeSwap contract address has a DAO Treasury.
+
+There are many ways of DAO Treasury income: part of swap fee, ecosystem cooperation, and AnimeSwap will develop more ways.
+
+The ways of allocating DAO treasury are [voted by community members](#vote-and-governance).
+
+The purpose of the DAO Treasury is to help projects grow better, if there are no better allocating usages, the DAO Treasury will buybuck `ANI` and burn.
+
+### Whitelist Eligibility
+
+AnimeSwap Labs will public some free NFT with Anime style or Anime IP cooperation. The whitelist eligibility of mint is based on `ANI` token, including `ANI` in staking and farm.
+
+### Buy Anime Goods
+
+AnimeSwap Labs love Anime culture, `ANI` will **be used as currency** to buy reality Anime culture goods in the future.
+
+![logo](/img/HR231.png) ![logo](/img/WB001.png) ![logo](/img/WB777.png)
