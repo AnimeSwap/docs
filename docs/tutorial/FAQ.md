@@ -20,7 +20,7 @@ Combining the two, we have AnimeSwap.
 
 ### Q3: Is there a native token/coin of AnimeSwap?
 
-AnimeSwap will have a native coin named `$ANI` for sure, but not yet.
+AnimeSwap has a native coin named `$ANI`.
 
 `$ANI` will be used for governance, staking, and other purposes. 
 It is used to participate in the benefits of AnimeSwap.
@@ -29,11 +29,13 @@ We believe DeFi is the future, and DeFi is a ecosystem about coins. We will have
 
 ### Q4: How to get $ANI?
 
-It has not a public detail plan, details will be public after AnimeSwap official launch.
+Check [Distribution and Emission](Tokenomics#distribution-and-emission)
+
+You can also buy `$ANI` through [AnimeSwap](https://app.animeswap.org/#/swap?chain=aptos)
 
 ### Q5: What is the tokenomic of $ANI ?
 
-No public detail about tokenomic currently.
+[Tokenomic](Tokenomics.mdx)
 
 ### Q6: How to participate in AnimeSwap?
 
