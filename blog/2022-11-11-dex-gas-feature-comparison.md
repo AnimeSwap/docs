@@ -1,6 +1,6 @@
 ---
 slug: dex-comparison
-title: Aptos Dex gas and feature comparison
+title: Aptos Dex Gas and Feature Comparison
 authors: [zzzkky]
 tags: [animeswap,dex,gas]
 ---
