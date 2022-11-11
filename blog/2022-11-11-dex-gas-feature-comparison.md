@@ -11,7 +11,7 @@ tags: [animeswap,dex,gas]
 ## Gas Units Cost Comparison
 Lower is better. `1k` costs `0.001 APT` gas fee at the lowest gas unit price.
 
-| Operation | AnimeSwap | LiquidSwap[1] | AuxSwap | PancakeSwap | LiquidSwapStable[2] |
+| Operation | AnimeSwap | LiquidSwap[1] | AuxSwap | PancakeSwap | LiquidSwap Stable[2] |
 | --------- | --------- | ---------- | ------- | ----------- | ----------- |
 | Swap | [1.4k](https://explorer.aptoslabs.com/txn/29070665) | [4.3k](https://explorer.aptoslabs.com/txn/29054779) | [1.4k](https://explorer.aptoslabs.com/txn/29062775) | [9k](https://explorer.aptoslabs.com/txn/29071346) | [110k](https://explorer.aptoslabs.com/txn/29095574)
 | Add LP[3] | [2.7k](https://explorer.aptoslabs.com/txn/28913205) or [3.2k](https://explorer.aptoslabs.com/txn/28867473) | [3.4k](https://explorer.aptoslabs.com/txn/29054857) | [2.4k](https://explorer.aptoslabs.com/txn/28627168) or [3.2k](https://explorer.aptoslabs.com/txn/28833128) | [3.5k](https://explorer.aptoslabs.com/txn/28987912) | - |
