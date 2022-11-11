@@ -8,59 +8,61 @@ tags: [animeswap,dex,gas]
 # Dex gas and feature comparison
 **TL;DR: AnimeSwap saves your gas and supports most features.**
 
-## Gas units cost comparison
-Lower is better. 1k costs 0.001 APT gas fee at the lowest gas unit price.
+## Gas Units Cost Comparison
+Lower is better. `1k` costs `0.001 APT` gas fee at the lowest gas unit price.
 
-| Operation | AnimeSwap | LiquidSwap* | AuxSwap | PancakeSwap | LiquidSwapStable** |
+| Operation | AnimeSwap | LiquidSwap[1] | AuxSwap | PancakeSwap | LiquidSwapStable[2] |
 | --------- | --------- | ---------- | ------- | ----------- | ----------- |
 | Swap | [1.4k](https://explorer.aptoslabs.com/txn/29070665) | [4.3k](https://explorer.aptoslabs.com/txn/29054779) | [1.4k](https://explorer.aptoslabs.com/txn/29062775) | [9k](https://explorer.aptoslabs.com/txn/29071346) | [110k](https://explorer.aptoslabs.com/txn/29095574)
-| Add LP*** | [2.7k](https://explorer.aptoslabs.com/txn/28913205) or [3.2k](https://explorer.aptoslabs.com/txn/28867473) | [3.4k](https://explorer.aptoslabs.com/txn/29054857) | [2.4k](https://explorer.aptoslabs.com/txn/28627168) or [3.2k](https://explorer.aptoslabs.com/txn/28833128) | [3.5k](https://explorer.aptoslabs.com/txn/28987912) | - |
+| Add LP[3] | [2.7k](https://explorer.aptoslabs.com/txn/28913205) or [3.2k](https://explorer.aptoslabs.com/txn/28867473) | [3.4k](https://explorer.aptoslabs.com/txn/29054857) | [2.4k](https://explorer.aptoslabs.com/txn/28627168) or [3.2k](https://explorer.aptoslabs.com/txn/28833128) | [3.5k](https://explorer.aptoslabs.com/txn/28987912) | - |
 | Remove LP | [2.6k](https://explorer.aptoslabs.com/txn/29039235) | [1.7k](https://explorer.aptoslabs.com/txn/29054927) | [1.4k](https://explorer.aptoslabs.com/txn/28574524) | [2.4k](https://explorer.aptoslabs.com/txn/28741526) | - |
 
-\* Uncorrelated curve. Common case.
-
-\** Stable curve.
-
-\*** Some Dex has different gas cost for adding LP under different situations.
+:::info
+* [1] Uncorrelated curve. Common case.
+* [2] Stable curve.
+* [3] Some Dex has different gas cost for adding LP under different situations.
+:::
 
 ### Analysis
 * `Swap` is the most common use-case, over 95% of all transactions. `AnimeSwap` and `AuxSwap` are the most gas-saving dexes in this situation. `3.1x` better than `LiquidSwap`. `6.4x` better than `PancakeSwap`.
-* `LiquidSwap Stable` is heavily gas-consuming, each tx takes at least 0.1 APT gas fee in the lowest gas unit price.
+* `LiquidSwap Stable` is **Heavily** gas-consuming, each tx takes at least `0.1 APT` gas fee in the lowest gas unit price.
 * `Add/Remove LP` cost almost the same gas among these dexes.
 
-### Gas conclusion
+### Gas Conclusion
 `AnimeSwap` and `AuxSwap` are the most gas-saving dexes.
 
-## Features comparison
+## Features Comparison
 | Feature | AnimeSwap | LiquidSwap | AuxSwap | PancakeSwap | Aptoswap
 | ------- | --------- | ---------- | ------- | ----------- | -------- |
-| Open source | √ [link](https://github.com/AnimeSwap/v1-core) | √ [link](https://github.com/pontem-network/liquidswap) | √ [link](https://github.com/aux-exchange/aux-exchange) | √ [link](https://github.com/pancakeswap/pancake-contracts-move) |  [link](https://github.com/vividnetwork/aptoswap) |
-| SwapExactCoinToCoin | √ | √ | √ | √ | √ |
-| SwapCoinToExactCoin | √ | √ | √ | √ | x |
-| Gas-saving | √ | x | √ | x | √ |
-| Custom pairs | √ | √ | x | √ | x |
-| Flash swap | √ | √ | √ | x | x |
-| Stable curve | x | √ * | x | x | x |
-| Oracle | √ | √ | x | x | x |
-| Route | √ | x | x | x | x |
+| Open source | ✔️ [link](https://github.com/AnimeSwap/v1-core) | ✔️ [link](https://github.com/pontem-network/liquidswap) | ✔️ [link](https://github.com/aux-exchange/aux-exchange) | ✔️ [link](https://github.com/pancakeswap/pancake-contracts-move) |  [link](https://github.com/vividnetwork/aptoswap) |
+| SwapExactCoinToCoin | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| SwapCoinToExactCoin | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Gas-saving | ✔️ | ❌ | ✔️ | ❌ | ✔️ |
+| Custom Pairs | ✔️ | ✔️ | ❌ | ✔️ | ❌ |
+| Flash Swap | ✔️ | ✔️ | ✔️ | ❌| ❌ |
+| Stable Curve | ❌ | ✔️[4] | ❌ | ❌ | ❌ |
+| Oracle | ✔️ | ✔️ | ❌ | ❌ | ❌ |
+| Route | ✔️ | ❌ | ❌ | ❌ | ❌ |
 
-\* Support, but gas-consuming. Already explained in the above section.
+:::info
+* [4] Support, but gas-consuming. Already explained in the above section.
+:::
 
 ### Analysis
-* `Open source` All the dexes are open-sourced. You can check the source code with link above.
-* `SwapExactCoinToCoin` This is the basic feature.
-* `SwapCoinToExactCoin` **SwapCoinToExactCoin** means whether uses can get exact output amount. For example, loan liquidators want to get exact amount coin with minimal input coin. Most dexes support this feature, while `Aptoswap` not.
+* `Open source`: All the dexes are open-sourced. You can check the source code with link above.
+* `SwapExactCoinToCoin`: This is the basic feature.
+* `SwapCoinToExactCoin`: **SwapCoinToExactCoin** means whether uses can get exact output amount. For example, loan liquidators want to get exact amount coin with minimal input coin. Most dexes support this feature, while `Aptoswap` not.
 ![SwapCoinToExactCoin](/img/SwapCoinToExactCoin.png)
-* `Gas-saving` We have already explained in the above section. `AnimeSwap`, `AuxSwap` and `Aptoswap` are the most gas-saving dexes.
-* `Custom pairs` **Custom pairs** means whether users can create new coin pairs. `AnimeSwap`, `LiquidSwap` and `PancakeSwap` have this feature. You can add custom pair [here](https://app.animeswap.org/#/add?chain=aptos)
+* `Gas-saving`: We have already explained in the above section. `AnimeSwap`, `AuxSwap` and `Aptoswap` are the most gas-saving dexes.
+* `Custom Pairs`: **Custom pairs** means whether users can create new coin pairs. `AnimeSwap`, `LiquidSwap` and `PancakeSwap` have this feature. You can add custom pair [here](https://app.animeswap.org/#/add?chain=aptos)
 ![create pair](/img/createPair.png)
-* `Flash swap` **Flash swap** allows you to borrow any available amount of assets without putting up any collateral, as long as the liquidity is returned to the protocol within one block transaction. This is the example for [AnimeSwap Flash Swap](../docs/contracts/Swap/swap_examples#flash-swap-example)
-* `Stable curve` Unfortunately, we do not support this feature. Only `LiquidSwap` support it, but has gas problem. 
-* `Oracle` **Orcale** means support price oracle for other dapp. `AnimeSwap` and `LiquidSwap` support this feature. This is the resources reference for [AnimeSwap Oracle](../docs/contracts/Swap/swap_resources#liquiditypool)
-* `Route` With **route**, you can swap any coin to any coin in one tx, among multiple pairs. Only `AnimeSwap` support a build-in router.
+* `Flash Swap`: **Flash swap** allows you to borrow any available amount of assets without putting up any collateral, as long as the liquidity is returned to the protocol within one block transaction. This is the example for [AnimeSwap Flash Swap](../docs/contracts/Swap/swap_examples#flash-swap-example)
+* `Stable Curve`: Unfortunately, we do not support this feature. Only `LiquidSwap` support it, but has gas problem. 
+* `Oracle`: **Orcale** means support price oracle for other dapp. `AnimeSwap` and `LiquidSwap` support this feature. This is the resources reference for [AnimeSwap Oracle](../docs/contracts/Swap/swap_resources#liquiditypool)
+* `Route`: With **route**, you can swap any coin to any coin in one tx, among multiple pairs. Only `AnimeSwap` support a build-in router.
 ![router](/img/router.png)
 
-### Feature conclusion
+### Feature Conclusion
 `AnimeSwap` and `LiquidSwap` support most features.
 
 ## Conclusion
