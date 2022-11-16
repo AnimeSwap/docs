@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Aptos Dex Gas and Feature Comparison","permalink":"/blog/dex-comparison"},{"title":"Introducing AnimeSwap v1","permalink":"/blog/mdx-blog-post"}]}')}}]);
