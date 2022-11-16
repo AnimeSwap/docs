@@ -41,7 +41,9 @@ const sidebars = {
       type: 'category',
       label: 'MasterChef',
       items: [
-        'contracts/MasterChef/masterchef_api'
+        'contracts/MasterChef/masterchef_api',
+        'contracts/MasterChef/masterchef_resources',
+        'contracts/MasterChef/masterchef_event',
       ],
       collapsed: false,
     },

@@ -28,7 +28,7 @@ If pair not exist, transaction will auto **Create Pair first**
 ```
 aptos move run --function-id 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1::add_liquidity_entry \
 --args u64:10000000000 u64:100000000 u64:1 u64:1 \
---type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::USDT 0x1::aptos_coin::AptosCoin
+--type-args 0x1::aptos_coin::AptosCoin 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeCoin::ANI
 ```
 
 ## remove_liquidity_entry
@@ -45,7 +45,7 @@ Remove liquidity for `X` and `Y`
 ```
 aptos move run --function-id 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1::remove_liquidity_entry \
 --args u64:1000 u64:1 u64:1 \
---type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC 0x1::aptos_coin::AptosCoin
+--type-args 0x1::aptos_coin::AptosCoin 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeCoin::ANI
 ```
 
 ## swap_exact_coins_for_coins_entry
@@ -64,7 +64,7 @@ Swap `X` for `CoinTypeX`, where `CoinTypeX` is the last type-arg
 ```
 aptos move run --function-id 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1::swap_exact_coins_for_coins_entry \
 --args u64:100 u64:1 \
---type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC 0x1::aptos_coin::AptosCoin
+--type-args 0x1::aptos_coin::AptosCoin 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeCoin::ANI
 ```
 
 ## swap_coins_for_exact_coins_entry
@@ -83,5 +83,5 @@ Swap `X` for `CoinTypeX`, where `CoinTypeX` is the last type-arg
 ```
 aptos move run --function-id 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeSwapPoolV1::swap_coins_for_exact_coins_entry \
 --args u64:100 u64:1000000000 \
---type-args 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC 0x1::aptos_coin::AptosCoin
+--type-args 0x1::aptos_coin::AptosCoin 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::AnimeCoin::ANI
 ```
