@@ -13,7 +13,7 @@ AnimeSwap protocol has three basic usages:
 * **Earn**: earn with automated market maker in a easiest way, more profit, less loss.
 * **Build**: as a public protocol that every DApp, every tools  and every one could connect, as a infrastructure to improve on-chain liquidity.
 
-# The Model
+## The Model
 ```
 x * y = k
 ```
@@ -32,7 +32,7 @@ But for early Aptos network, relative pair is not very important and not widely 
 
 Swap model contract open source code and documents [check here](/docs/contracts).
 
-# Anyone Can Create Pool
+## Anyone Can Create Pool
 
 Another very important feature of AnimeSwap v1 is that anyone can create a pool.
 
@@ -41,7 +41,7 @@ and if the pair has been added liquidity by anyone it could swap.
 
 AnimeSwap Labs only developing the protocol, not managing the protocol, keeping AnimeSwap protocol **decentralized**. 
 
-# Swap Fee and DAO
+## Swap Fee and DAO
 
 Liquidity providers need incentives, they provide tokens (lock value) and may bear [impermanent loss](https://academy.binance.com/en/articles/what-is-an-automated-market-maker-amm), swap fee to reward liquidity providers is AMM basic loop and feature.
 
@@ -57,7 +57,7 @@ If DAO fee accumulated too much and not used, it will be keep lock as LP token t
 
 For more details about DAO usages [check here](/docs/tutorial/Tokenomics#dao-treasury).
 
-# Flash Swap
+## Flash Swap
 
 AnimeSwap supports Flash Swap, [here is Flash Swap example](/docs/contracts/Swap/swap_examples#flash-swap-example).
 
@@ -73,7 +73,7 @@ Here is a good article about flash swap: [All About DeFi Flash Loans](https://po
 `Flash Loans` is another name of `Flash Swap`, they are the same thing.
 :::
 
-# Route
+## Route
 
 Give a simple scenario, there are three pools (pairs): `A<>B`, `B<>C`, `C<>D`, and the user wants to swap `A` to `D`.
 
@@ -84,7 +84,7 @@ AnimeSwap supports inline route ABI for such scenario to make simple route swap 
 What's more, AnimeSwap interface has a visualization of route swap.
 For more about route comparison and AnimeSwap advences, read [Aptos Dex Gas and Feature Comparison](/blog/dex-comparison).
 
-# GAS Friendly
+## GAS Friendly
 
 AnimeSwap Labs spents a lot of time to optimize the [Move contract](https://github.com/AnimeSwap/v1-core) and make AnimeSwap v1 protocol the most GAS friendly protocol.
 
@@ -92,12 +92,12 @@ AnimeSwap v1 protocol [core contract](https://github.com/AnimeSwap/v1-core) has 
 
 For more about GAS comparison and AnimeSwap advences, read [Aptos Dex Gas and Feature Comparison](/blog/dex-comparison#gas-units-cost-comparison).
 
-# Future Upgrade
+## Future Upgrade
 
 DeFi is fast evolving, and AnimeSwap will keep evolving.
-If there are better direction for ecosystem growth, AnimeSwap Labs will create and deploy AnimeSwap v2 protocols as upgrade, all decision making via [vote-and-governance](/docs/tutorial/Tokenomics#vote-and-governance).
+If there are better direction for ecosystem growth, AnimeSwap Labs will create and deploy AnimeSwap v2 protocol as upgrade, all decisions making via [vote-and-governance](/docs/tutorial/Tokenomics#vote-and-governance).
 
-Anyway, AnimeSwap v1 has been deploy on Aptos mainnet and it will live as long as Aptos network.
+Anyway, AnimeSwap v1 has been deploy on Aptos mainnet and it will live **as long as** Aptos network.
 
 From the time this article was written, AnimeSwap Labs is working on Holder Pool and has a basic plan to supports other Move contract chains.
 
