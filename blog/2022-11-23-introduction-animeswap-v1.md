@@ -1,5 +1,5 @@
 ---
-slug: mdx-blog-post
+slug: animeswap-v1
 title: Introducing AnimeSwap v1
 authors: [azard]
 tags: [animeswap,protocol,intruduction]
