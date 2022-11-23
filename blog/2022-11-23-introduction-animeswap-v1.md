@@ -5,10 +5,6 @@ authors: [azard]
 tags: [animeswap,protocol,intruduction]
 ---
 
-:::info
-This blog is write in progress
-:::
-
 **AnimeSwap v1** is a protocol of decentralized exchange (DEX) and automated market maker (AMM) runs on Move Virtual Machine. Anyone could interact with the protocol for swaping coins and earn coins.
 
 AnimeSwap protocol has three basic usages:
