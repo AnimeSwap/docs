@@ -42,3 +42,7 @@ You can also buy `$ANI` through [AnimeSwap](https://app.animeswap.org/#/swap?cha
 AnimeSwap is live on Aptos Mainnet, you can participate in AnimeSwap by **Swap**, **Create Pool**, **Add Liquidity** and feedback at Discord or Twitter.
 
 Glad to see you help build the AnimeSwap community.
+
+### Q7: If AnimeSwap deployed on other Move contract chain such as #Sui, will there be new tokens?
+
+Nope, $ANI on Aptos and $ANI on other chains share the **SAME** tokenomics and supply. $ANI is the **Only One** token of AnimeSwap.
