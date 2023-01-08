@@ -102,7 +102,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'updates/2022',
+            docId: 'updates/2023',
             position: 'left',
             label: 'Updates',
           },
