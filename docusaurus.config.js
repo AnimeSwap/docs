@@ -165,6 +165,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/AnimeSwap',
               },
+              {
+                label: 'Roadmap',
+                href: 'https://github.com/orgs/AnimeSwap/projects/1/views/1',
+              },
             ],
           },
         ],
