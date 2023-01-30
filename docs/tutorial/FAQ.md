@@ -46,3 +46,7 @@ Glad to see you help build the AnimeSwap community.
 ### Q7: If AnimeSwap deployed on other Move contract chain such as #Sui, will there be new tokens?
 
 Nope, $ANI on Aptos and $ANI on other chains share the **SAME** tokenomics and supply. $ANI is the **Only One** token of AnimeSwap.
+
+### Q8: How to find AnimeSwap update log?
+
+[Updates](../updates/2023.md)
