@@ -102,3 +102,5 @@ Anyway, AnimeSwap v1 has been deploy on Aptos mainnet and it will live **as long
 From the time this article was written, AnimeSwap Labs is working on Holder Pool and has a basic plan to supports other Move contract chains.
 
 AnimeSwap keep evolving and will be better and better.
+
+> Update 20230309: AnimeSwap already deployed on Sui Devnet.
