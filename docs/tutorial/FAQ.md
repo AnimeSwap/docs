@@ -49,6 +49,8 @@ Nope, $ANI on Aptos and $ANI on other chains share the **SAME** tokenomics and s
 
 Update 20230309: AnimeSwap already deployed on Sui Devnet.
 
+Update 20230418: AnimeSwap already deployed on Sui Testnet
+
 ### Q8: How to find AnimeSwap update log?
 
 [Updates](../updates/2023.md)
