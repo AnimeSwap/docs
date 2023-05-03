@@ -47,9 +47,7 @@ Glad to see you help build the AnimeSwap community.
 
 Nope, $ANI on Aptos and $ANI on other chains share the **SAME** tokenomics and supply. $ANI is the **Only One** token of AnimeSwap.
 
-Update 20230309: AnimeSwap already deployed on Sui Devnet.
-
-Update 20230418: AnimeSwap already deployed on Sui Testnet
+Update 20230503: AnimeSwap already deployed on Sui Mainnet, $ANI will be bridge between Aptos and Sui in the future.
 
 ### Q8: How to find AnimeSwap update log?
 
