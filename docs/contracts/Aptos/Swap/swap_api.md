@@ -54,11 +54,9 @@ public entry fun swap_exact_coins_for_coins_entry<X, Y>(account: &signer, amount
 public entry fun swap_exact_coins_for_coins_2_pair_entry<X, Y, Z>(account: &signer, amount_in: u64, amount_out_min: u64)
 public entry fun swap_exact_coins_for_coins_3_pair_entry<X, Y, Z, W>(account: &signer, amount_in: u64, amount_out_min: u64)
 ```
-Swap `X` for `CoinTypeX`, where `CoinTypeX` is the last type-arg
+Swap `X` for `CoinTypeW`, where `CoinTypeW` is the last type-arg
 * Require all pairs exist, otherwise tx will fail
-* Input exact `amount_in` `X` and output at least `amount_out_min` `CoinTypeX`, to `to` address
-* If `to` address is equal to `account`, tx will auto register `CoinTypeX` for `to` address
-* If `to` address is not equal to `account`, user should register `CoinTypeX` to `to` address manually, otherwise tx will fail
+* Input exact `amount_in` `X` and output at least `amount_out_min` `CoinTypeW`
 * Emit `swap_event`, `sync_event`
 * CLI example:
 ```
@@ -73,11 +71,9 @@ public entry fun swap_coins_for_exact_coins_entry<X, Y>(account: &signer, amount
 public entry fun swap_coins_for_exact_coins_2_pair_entry<X, Y, Z>(account: &signer, amount_out: u64, amount_in_max: u64)
 public entry fun swap_coins_for_exact_coins_3_pair_entry<X, Y, Z, W>(account: &signer, amount_out: u64, amount_in_max: u64)
 ```
-Swap `X` for `CoinTypeX`, where `CoinTypeX` is the last type-arg
+Swap `X` for `CoinTypeW`, where `CoinTypeW` is the last type-arg
 * Require all pairs exist, otherwise tx will fail
-* Input at least `amount_in` `X` and output exact `amount_out_min` `CoinTypeX`, to `to` address
-* If `to` address is equal to `account`, tx will auto register `CoinTypeX` for `to` address
-* If `to` address is not equal to `account`, user should register `CoinTypeX` to `to` address manually, otherwise tx will fail
+* Input at least `amount_in` `X` and output exact `amount_out_min` `CoinTypeW`
 * Emit `swap_event`, `sync_event`
 * CLI example:
 ```

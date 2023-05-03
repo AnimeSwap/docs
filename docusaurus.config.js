@@ -85,7 +85,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'contracts/contracts',
+            docId: 'contracts/Aptos/contracts',
             position: 'left',
             label: 'Contracts',
           },
@@ -121,7 +121,7 @@ const config = {
             items: [
               {
                 label: 'Contracts',
-                to: '/docs/contracts',
+                to: '/docs/contracts/Aptos/contracts',
               },
               {
                 label: 'SDK',

@@ -22,30 +22,60 @@ const sidebars = {
   ],
   contracts: [
     {
-      type: 'doc',
-      label: 'Overview',
-      id: 'contracts/contracts',
+      type: 'category',
+      label: 'Aptos',
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          label: 'Overview',
+          id: 'contracts/Aptos/contracts',
+        },
+        {
+          type: 'category',
+          label: 'Swap',
+          items: [
+            'contracts/Aptos/Swap/swap_api',
+            'contracts/Aptos/Swap/swap_resources',
+            'contracts/Aptos/Swap/swap_events',
+            'contracts/Aptos/Swap/swap_examples',
+          ],
+          collapsed: true,
+        },
+        {
+          type: 'category',
+          label: 'MasterChef',
+          items: [
+            'contracts/Aptos/MasterChef/masterchef_api',
+            'contracts/Aptos/MasterChef/masterchef_resources',
+            'contracts/Aptos/MasterChef/masterchef_event',
+          ],
+          collapsed: true,
+        },
+      ],
     },
     {
       type: 'category',
-      label: 'Swap',
-      items: [
-        'contracts/Swap/swap_api',
-        'contracts/Swap/swap_resources',
-        'contracts/Swap/swap_events',
-        'contracts/Swap/swap_examples',
-      ],
+      label: 'SUI',
       collapsed: false,
-    },
-    {
-      type: 'category',
-      label: 'MasterChef',
       items: [
-        'contracts/MasterChef/masterchef_api',
-        'contracts/MasterChef/masterchef_resources',
-        'contracts/MasterChef/masterchef_event',
+        {
+          type: 'doc',
+          label: 'Overview',
+          id: 'contracts/SUI/contracts',
+        },
+        {
+          type: 'category',
+          label: 'Swap',
+          items: [
+            'contracts/SUI/Swap/swap_api',
+            'contracts/SUI/Swap/swap_resources',
+            'contracts/SUI/Swap/swap_events',
+            'contracts/SUI/Swap/swap_examples',
+          ],
+          collapsed: true,
+        },
       ],
-      collapsed: false,
     },
   ],
   sdk: [

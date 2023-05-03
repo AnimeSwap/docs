@@ -12,7 +12,7 @@ export default function HomepageFeatures() {
               <img src="/img/WB777.png" className={styles.featureIcon}></img>
             </div>
             <div className="text--center padding-horiz--md">
-              <h2><a href={'/docs/contracts'}>{'Smart Contracts'}</a></h2>
+              <h2><a href={'/docs/contracts/Aptos/contracts'}>{'Smart Contracts'}</a></h2>
               <p>
                 Learn about the architecture of the AnimeSwap Protocol smart contracts made up of the Core and Periphery libraries.
               </p>
