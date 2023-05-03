@@ -56,22 +56,22 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SUI',
+      label: 'Sui',
       collapsed: false,
       items: [
         {
           type: 'doc',
           label: 'Overview',
-          id: 'contracts/SUI/contracts',
+          id: 'contracts/Sui/contracts',
         },
         {
           type: 'category',
           label: 'Swap',
           items: [
-            'contracts/SUI/Swap/swap_api',
-            'contracts/SUI/Swap/swap_resources',
-            'contracts/SUI/Swap/swap_events',
-            'contracts/SUI/Swap/swap_examples',
+            'contracts/Sui/Swap/swap_api',
+            'contracts/Sui/Swap/swap_resources',
+            'contracts/Sui/Swap/swap_events',
+            'contracts/Sui/Swap/swap_examples',
           ],
           collapsed: true,
         },
