@@ -8,9 +8,9 @@ Similar to Aptos, SUI uses `Shared Object` for keeping resources.
 ### Swap module
 Swap module is the core of DEX and AMM, the module is about swap coins, create pool, add and remove liquidity.
 * Github repo: [sui-v1-core](https://github.com/AnimeSwap/sui-v1-core/tree/v1.0.0)
-* Module name: WIP
+* Module name: `0x88d362329ede856f5f67867929ed570bba06c975abec2fab7f0601c56f6a8cb1::animeswap`
 * Deploy Account: [0x2ab6bc284091a0dd94f9533f756549fe7583e51c79d0b10bacd5d9816ccf8f74](https://explorer.sui.io/address/0x2ab6bc284091a0dd94f9533f756549fe7583e51c79d0b10bacd5d9816ccf8f74?network=mainnet)
-* Shared Object: WIP
+* Shared Object: [0xdd7e3a071c6a090a157eccc3c9bbc4d2b3fb5ac9a4687b1c300bf74be6a58945](https://explorer.sui.io/object/0xdd7e3a071c6a090a157eccc3c9bbc4d2b3fb5ac9a4687b1c300bf74be6a58945?network=testnet)
 
 ------
 
