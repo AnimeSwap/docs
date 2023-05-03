@@ -56,9 +56,9 @@ Lower is better. `1k` costs `0.001 APT` gas fee at the lowest gas unit price.
 * `Gas-saving`: We have already explained in the above section. `AnimeSwap`, `Aux` and `Aptoswap` are the most gas-saving dexes.
 * `Custom Pairs`: **Custom pairs** means whether users can create new coin pairs. `AnimeSwap`, `Liquidswap` and `PancakeSwap` have this feature. You can [add custom pair here](https://app.animeswap.org/#/add?chain=aptos)
 ![create pair](/img/createPair.png)
-* `Flash Swap`: **Flash swap** allows you to borrow any available amount of assets without putting up any collateral, as long as the liquidity is returned to the protocol within one block transaction. This is the example for [AnimeSwap Flash Swap](/docs/contracts/Swap/swap_examples#flash-swap-example)
+* `Flash Swap`: **Flash swap** allows you to borrow any available amount of assets without putting up any collateral, as long as the liquidity is returned to the protocol within one block transaction. This is the example for [AnimeSwap Flash Swap](/docs/contracts/Aptos/Swap/swap_examples#flash-swap-example)
 * `Stable Curve`: Unfortunately, we do not support this feature. Only `Liquidswap` support it, but has gas problem. 
-* `Oracle`: **Orcale** means support price oracle for other dapp. `AnimeSwap` and `Liquidswap` support this feature. This is the resources reference for [AnimeSwap Oracle](/docs/contracts/Swap/swap_resources#liquiditypool)
+* `Oracle`: **Orcale** means support price oracle for other dapp. `AnimeSwap` and `Liquidswap` support this feature. This is the resources reference for [AnimeSwap Oracle](/docs/contracts/Aptos/Swap/swap_resources#liquiditypool)
 * `Route`: With **route**, you can swap any coin to any coin in one tx, among multiple pairs. Only `AnimeSwap` support a build-in router.
 ![router](/img/router.png)
 

@@ -30,7 +30,7 @@ Other models like [Curve](https://curve.fi/) and [Uniswap v3](https://docs.unisw
 
 But for early Aptos network, relative pair is not very important and not widely used, so AnimeSwap v1 choose the only one model to keep simple and uniform.
 
-Swap model contract open source code and documents [check here](/docs/contracts).
+Swap model contract open source code and documents [check here](/docs/contracts/Aptos/contracts).
 
 ## Anyone Can Create Pool
 
@@ -59,7 +59,7 @@ For more details about DAO usages [check here](/docs/tutorial/Tokenomics#dao-tre
 
 ## Flash Swap
 
-AnimeSwap supports Flash Swap, [here is Flash Swap example](/docs/contracts/Swap/swap_examples#flash-swap-example).
+AnimeSwap supports Flash Swap, [here is Flash Swap example](/docs/contracts/Aptos/Swap/swap_examples#flash-swap-example).
 
 Flash Swap is a very important feature of AMM, it could be used for arbitrage, liquidation, and other scenarios.
 
